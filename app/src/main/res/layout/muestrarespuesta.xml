@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/pantallaInte">
+
+    <TextView
+        android:id="@+id/numMinCuartos"
+        style="@style/tituInte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="83dp"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/tituInte"
+        android:text="La cantidad mínima de cuartos es : "
+        app:layout_constraintLeft_toLeftOf="@+id/numMinCuartos"
+        app:layout_constraintRight_toRightOf="@+id/numMinCuartos"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintBottom_toTopOf="@+id/numMinCuartos"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/guideline4"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline4"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="vuelveMenuPrin"
+        android:text="Menú principal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/numMinCuartos"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/tituInte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reporte:" />
+
+            <TextView
+                android:id="@+id/conteReporte"
+                style="@style/letrasInte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vacio" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

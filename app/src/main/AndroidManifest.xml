@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.angello.compuestos">
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Incompatibilidad de compuestos"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="coima.dspscoma.angello.compuestos.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="coima.dspscoma.angello.compuestos.IntegrantesActividad"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="coima.dspscoma.angello.compuestos.Empezar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="coima.dspscoma.angello.compuestos.MuestraRespuesta"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="coima.dspscoma.angello.compuestos.Instrucciones"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="coima.dspscoma.angello.compuestos.IntroNumero"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="coima.dspscoma.angello.compuestos.Creditos"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
